@@ -18,10 +18,14 @@ var server = app.listen(3000, function() {
 })
     
 
+app.get('/', function(req,res){
+  res.redirect('/users')
+})
+
 app.get('/search', function (request, response) {
   // shows form
     response.render('searchajax', {
-      title: "Search User Directory"
+      title: "Search list of Bitches"
     });
  });
 
@@ -29,7 +33,7 @@ app.get('/search', function (request, response) {
 // GET Add user page
 app.get('/users/add', function(request, response) {
     response.render('adduser', {
-      title: "Add new user to the directory"
+      title: "Add new Bitch to the list of Bitches"
     });
  });
 
@@ -40,7 +44,7 @@ app.get('/users', function(request, response) {
       throw err;
     } else {
       response.render('userlist', {
-        title: "User Directory",
+        title: "List of Bitches",
         userlist: JSON.parse(data)
       });
     };

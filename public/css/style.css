@@ -1,21 +1,27 @@
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Courier", Courier, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  color: blue;
 }
 
 #content {
 	padding: 50px;
 }
 
+
+#content li {
+  list-style-image: url('../images/heart.png');
+}
+
+
 #navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: pink;
 }
 
 #navbar li {
