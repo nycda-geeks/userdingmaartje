@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    #navbar
+        ul
+          li
+            a(href="/users") all users
+            a(href="/users/add")  add user
+            a(href="/search")  search
+    #content
+      block content

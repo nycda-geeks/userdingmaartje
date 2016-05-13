@@ -1,0 +1,16 @@
+extends layout
+ 
+block content
+    h1= title
+    form(action='/users/add', method="post")
+        div.input
+            span.label First name
+            input(type="text", name="firstname")
+            br
+            span.label Last name
+            input(type="text", name="lastname")
+            br
+            span.label Email
+            input(type="email", name="email")
+        div.actions
+            input(type="submit", value="add")

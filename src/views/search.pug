@@ -1,0 +1,10 @@
+extends layout
+ 
+block content
+    h1= title
+    form(action='/search', method="post")
+        div.input
+            span.label Name of employee
+            input(type="text", name="name")
+        div.actions
+            input(type="submit", value="search")

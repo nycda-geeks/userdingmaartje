@@ -1,0 +1,17 @@
+{
+  "name": "userinformationapp",
+  "description": "homework",
+  "main": "index.js",
+  "authors": [
+    "Maartje"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
